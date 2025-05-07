@@ -1,46 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>KT 하이오더</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: sans-serif; background: #fff; overflow-x: hidden; }
-        .slide { width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; scroll-snap-align: start; padding: 2rem; }
-        .slides { scroll-snap-type: x mandatory; display: flex; overflow-x: auto; scroll-behavior: smooth; width: 100vw; height: 100vh; }
-        .kt-logo { max-width: 200px; margin-bottom: 1rem; }
-        .call-button { padding: 1rem 2rem; font-size: 1.5rem; background-color: yellow; color: black; border: none; border-radius: 10px; cursor: pointer; margin-top: 2rem; }
-        .description { font-size: 48px; text-align: center; margin-top: 1rem; }
-        .image { max-width: 80%; height: auto; margin-top: 1rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KT 하이오더 홍보</title>
+  <style>
+    body, html { margin: 0; padding: 0; font-family: sans-serif; }
+    .slide-container { display: flex; overflow-x: scroll; scroll-snap-type: x mandatory; width: 100vw; height: 100vh; }
+    .slide { scroll-snap-align: start; flex: none; width: 100vw; height: 100vh; padding: 40px; box-sizing: border-box; }
+    .slide h1 { font-size: 48px; margin-bottom: 20px; }
+    .slide p { font-size: 24px; line-height: 1.6; }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 20px;
+      background-color: yellow;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .logo { width: 200px; margin-bottom: 20px; }
+    img.kiosk { width: 300px; display: block; margin-top: 20px; }
+  </style>
 </head>
 <body>
-    <div class="slides">
-        <div class="slide" style="background-color:#fff;">
-            <img src="kt_logo.png" alt="KT 로고" class="kt-logo">
-            <img src="kiosk.jpg" alt="하이오더 키오스크" class="image">
-            <div class="description">스마트한 주문,<br>하이오더로 시작하세요!</div>
-            <a href="tel:01033957700"><button class="call-button">전화연결</button></a>
-        </div>
-        <div class="slide">
-            <div class="description">하이오더 장점</div>
-            <ul style="font-size: 2rem; margin-top: 2rem;">
-                <li>간편한 주문 & 결제</li>
-                <li>고객 대기시간 단축</li>
-                <li>실시간 메뉴 관리</li>
-                <li>유지보수 지원</li>
-            </ul>
-        </div>
-        <div class="slide">
-            <div class="description">프랜차이즈 패키지</div>
-            <ul style="font-size: 2rem; margin-top: 2rem;">
-                <li>비용 절감</li>
-                <li>통합 관리 시스템</li>
-                <li>마케팅 지원</li>
-                <li>교육 및 A/S 패키지 포함</li>
-            </ul>
-        </div>
-    </div>
+  <div class="slide-container">
+    <section class="slide" style="background-color: white;">
+      <img src="kt_logo.png" alt="KT 로고" class="logo" />
+      <h1>KT 하이오더란?</h1>
+      <p>
+        KT가 제공하는 스마트 키오스크 기반 무인주문 솔루션입니다.<br/>
+        소상공인과 프랜차이즈 매장을 위한 효율적인 주문 처리와 비용 절감을 실현합니다.<br/>
+        터치 한 번으로 간편 주문, 비대면 서비스까지!
+      </p>
+      <a href="tel:010-3395-7700" class="button">전화문의</a>
+      <img src="kiosk.jpg" alt="키오스크" class="kiosk" />
+    </section>
+
+    <section class="slide" style="background-color: white;">
+      <h1>하이오더, 이런 점이 좋습니다</h1>
+      <p>
+        • 간편한 조작: 누구나 쉽게 사용할 수 있는 UI<br/>
+        • 빠른 회전율: 줄 없는 주문, 더 많은 고객 응대<br/>
+        • 비용 절감: 인건비 부담 없이 운영 가능<br/>
+        • 매출 분석 기능: 주문 통계 및 인기 메뉴 확인 가능<br/>
+        • 세련된 디자인: 매장 분위기 업그레이드
+      </p>
+    </section>
+
+    <section class="slide" style="background-color: white;">
+      <h1>프랜차이즈 전용 혜택 패키지</h1>
+      <p>
+        • 다수 매장 대상 패키지 할인 제공<br/>
+        • 본사와 연동되는 통합 관리 시스템<br/>
+        • 전담 설치팀 및 유지보수 지원<br/>
+        • 가맹점에 맞춘 맞춤형 UI 및 콘텐츠 제작<br/>
+        • KT가 직접 제공하는 신뢰성 높은 서비스
+      </p>
+      <a href="tel:010-3395-7700" class="button">지금 문의하기</a>
+    </section>
+  </div>
 </body>
 </html>
