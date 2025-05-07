@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>KT 하이오더</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: sans-serif; background: #fff; overflow-x: hidden; }
+        .slide { width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; scroll-snap-align: start; padding: 2rem; }
+        .slides { scroll-snap-type: x mandatory; display: flex; overflow-x: auto; scroll-behavior: smooth; width: 100vw; height: 100vh; }
+        .kt-logo { max-width: 200px; margin-bottom: 1rem; }
+        .call-button { padding: 1rem 2rem; font-size: 1.5rem; background-color: yellow; color: black; border: none; border-radius: 10px; cursor: pointer; margin-top: 2rem; }
+        .description { font-size: 48px; text-align: center; margin-top: 1rem; }
+        .image { max-width: 80%; height: auto; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="slides">
+        <div class="slide" style="background-color:#fff;">
+            <img src="kt_logo.png" alt="KT 로고" class="kt-logo">
+            <img src="kiosk.jpg" alt="하이오더 키오스크" class="image">
+            <div class="description">스마트한 주문,<br>하이오더로 시작하세요!</div>
+            <a href="tel:01033957700"><button class="call-button">전화연결</button></a>
+        </div>
+        <div class="slide">
+            <div class="description">하이오더 장점</div>
+            <ul style="font-size: 2rem; margin-top: 2rem;">
+                <li>간편한 주문 & 결제</li>
+                <li>고객 대기시간 단축</li>
+                <li>실시간 메뉴 관리</li>
+                <li>유지보수 지원</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <div class="description">프랜차이즈 패키지</div>
+            <ul style="font-size: 2rem; margin-top: 2rem;">
+                <li>비용 절감</li>
+                <li>통합 관리 시스템</li>
+                <li>마케팅 지원</li>
+                <li>교육 및 A/S 패키지 포함</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
